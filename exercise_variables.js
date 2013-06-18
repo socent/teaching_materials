@@ -2,7 +2,6 @@ var future = 'You will be a ' + job + ' in ' + location + ', and married to ' +
 	partner + ' with ' + numKids + ' kids.';
 console.log(future);
 
-// Next problem
 
 function tellFortune (job, location, partner, numKids) {
 	var future = 'You will be a ' + job + ' in ' + location + ', and married to ' + 
@@ -14,7 +13,6 @@ tellFortune('plumber', 'Buffalo', 'Rosie O'Donnel', 15 );
 tellFortune('supermodel', 'LA', 'Prince', 0 );
 tellFortune('filmmaker', 'Poso', 'yourself', 5 );
 
-// Next problem
 
 function calculateAge (currentYear, birthYear) {
 	var age = currentYear - birthYear;
@@ -25,7 +23,6 @@ calculateAge(2013, 1954);
 calculateAge(1900, 1854);
 calculateAge(2013, 1992);
 
-// Next problem
 
 function calculateSupply (age, numPerDay) {
 	var ageDeath = 100;
@@ -70,28 +67,14 @@ function areaOfCircle(radius) {
 	return area;
 }
 
-base = 33;
-height 
-
 function x(num) {
-	var half = num / 2;
-	var squareNum = half * half;
-	squareNum = radius;
-	circleArea = MATH.PI * numSquared(radius)
-	areaPercentage = 100(circleArea / 
-	console.log ;
-
+    var half    = halfOf(num);
+    var squared = squareNumber(half);
+    var area    = areaOfCircle(squared);
+    var result  = percentOf(squared, area);
 }
 
-// CORRECT ANSWER here (but is mine far off?)
-// function doCrazyStuff(num) {
-//     var half    = halfOf(num);
-//     var squared = squareNumber(half);
-//     var area    = areaOfCircle(squared);
-//     var result  = percentOf(squared, area);
-// }
-
-// doCrazyStuff(5);
+x(5);
 
 function greaterNum(num1, num2) {
 	if (num1 > num2) {
@@ -101,5 +84,35 @@ function greaterNum(num1, num2) {
 	}
 }
 
-console.log(greaterNum(50, 1000));
-	
+greaterNum(3, 33);
+greaterNum(33, 32);
+console.log(The greater num of ' + num1 + ' and ' + num2 + ' is ' + greaterNum + '');
+
+function helloWorld(lang) {
+    if (lang == 'fr') {
+        return 'Bonjour tout le monde';
+    } else if (lang == 'es') {
+        return 'Hola, Mundo';
+    } else {
+        return 'Hello, World';
+    }
+}
+
+console.log(helloWorld('en'));
+console.log(helloWorld('fr'));
+console.log(helloWorld('es'));
+
+
+function helloWorld(lang) {
+    if (lang == 'fr') {
+        return 'Bonjour pauvre petit';
+    } else if (lang == 'es') {
+        return 'Hola gringo';
+    } else {
+        return 'Hello, World';
+    }
+}
+
+console.log(helloWorld('en'));
+console.log(helloWorld('fr'));
+console.log(helloWorld('es'));
