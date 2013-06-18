@@ -167,3 +167,64 @@ for (var i = 0; i <= 10; i++) {
 	var result = multiplier * i;
     console.log(multiplier + ' * ' + i + ' = ' + result);
 }
+
+
+var choices = ['red', 'orange', 'pink', 'yellow'];
+for (var i = 0; i < choices.length; i++) {
+    console.log('My #' + (i + 1) + ' choice is ' + choices[i]);
+}
+
+
+var recipe = {
+	'title': 'homemafe pasta',
+	'servings': 4,
+	'ingredients': ['salt', 'flour', 'egg', 'olive oil']
+};
+console.log('Recipe for' + recipe.title);
+console.log('Servings ' + recipe.servings);
+console.log('Ingredients: ');
+for (var i = 0; i < recipe.ingredients.length; i++) {
+    console.log(recipe.ingredients[i]);
+}
+
+var books = [
+{title: 'The Things They Carry',
+ author: 'Tim Obrien',
+ alreadyRead: true
+}
+{title: 'The Four Steps to the Epiphany',
+ author: 'Steve Blank',
+ alreadyRead: false
+}];
+
+for (var i = 0; i < books.length; i++) {
+  var book = books[i];
+  var bookInfo = book.title + '" by ' + book.author;
+  if (book.alreadyRead) {
+    console.log('You already read "' + bookInfo);
+  } else {
+    console.log('You still need to read "' + bookInfo);
+  }
+}
+
+
+
+
+var favMovie = {
+	title: 'Seven',
+ 	duration: 90,
+ 	stars: ['Brad Pitt', 'random hot girl', 'Bugs Bunny' ]
+};
+
+function printMovie(movie) {
+    console.log(movie.title + ' lasts for ' + movie.duration + ' minutes');
+    var stars = 'Stars: ';
+    for (var i = 0; i < movie.stars.length; i++) {
+        stars += movie.stars[i];
+        if (i != movie.stars.length -1) {
+            stars += ', ';
+        }
+    }
+    console.log(starsString);
+}
+
