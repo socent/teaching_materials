@@ -92,3 +92,14 @@ function x(num) {
 // }
 
 // doCrazyStuff(5);
+
+function greaterNum(num1, num2) {
+	if (num1 > num2) {
+		return num 1;
+	} else {
+		return num2;
+	}
+}
+
+console.log(greaterNum(50, 1000));
+	
