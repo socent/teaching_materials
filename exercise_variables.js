@@ -116,3 +116,34 @@ function helloWorld(lang) {
 console.log(helloWorld('en'));
 console.log(helloWorld('fr'));
 console.log(helloWorld('es'));
+
+
+function assignGrade(score) {
+    if (score > 89) {
+        return 'A';
+    } else if (score > 79) {
+        return 'B';
+    } else if (score > 69) {
+        return 'C';
+    } else if (score > 65) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+console.log('You got a ' + assignGrade(91));
+console.log('You got a ' + assignGrade(76));
+
+
+function pluralize(noun, number) {
+    if (number != 1 && noun) {
+        return number + ' ' + noun + 's';
+    } else {
+        return number + ' ' + noun;
+    }
+}
+console.log('I have ' + pluralize('cat', 0));
+console.log('I have ' + pluralize('cat', 1));
+console.log('I have ' + pluralize('cat', 2));
+
