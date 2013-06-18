@@ -132,8 +132,14 @@ function assignGrade(score) {
     }
 }
 
+for (var i = 80; i <= 100; i++) {
+  console.log('For ' + i + ', you got a ' + assignGrade(i));
+}
+
 console.log('You got a ' + assignGrade(91));
 console.log('You got a ' + assignGrade(76));
+
+
 
 
 function pluralize(noun, number) {
@@ -147,3 +153,17 @@ console.log('I have ' + pluralize('cat', 0));
 console.log('I have ' + pluralize('cat', 1));
 console.log('I have ' + pluralize('cat', 2));
 
+
+for (var i = 0; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i + ' is even');
+    } else {
+        console.log(i + ' is odd');
+    }
+}
+
+var multiplier = 9;
+for (var i = 0; i <= 10; i++) {
+	var result = multiplier * i;
+    console.log(multiplier + ' * ' + i + ' = ' + result);
+}
